@@ -1,23 +1,40 @@
-<html>
 
-<head>
-<title> LE SITE DE FREDO ET TOTO </title>
-</head>
-
-<body>
-<form method="post">
-<p> ENTREZ LE NOM DE COMMUNE FRANCAISE 
-<input type="text" name="commune">
-<br> COMBIEN DE PHOTOS A LA FOIS FRERO
-<select>
-<option value="5"> 5 </option>
-<option value="5"> 10 </option>
-<option value="5"> 15 </option>
-<option value="5"> 20 </option>
-<option value="5"> 25 </option>
-<option value="5"> 258 </option>
-</select>
-<br> <input type="submit" value="MONTREZ MOI LES PHOTOS DE MON PAYS">
-</body>
-
+	<head>
+		<script src="jquery-2.1.3.js"></script>
+		<script src="jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script>
+			$(function(){
+				var liste = [
+				"Nantes",
+				"NantCAMPOS COSTA",
+				"NanNANANANARNZUFNUDFINDS"
+				];
+				$("#commune").autocomplete({
+					source : liste
+				});
+					
+			});
+		</script>
+			<title> LE SITE DE FREDO ET TOTO </title>
+	</head>
+	<body>
+		<form method="post">
+			<div class="ui-widget">
+				<label for="commune">ENTREZ LE NOM DE COMMUNE FRANCAISE: </label>
+				<input type="text "id="commune">
+			</div>
+				<br> COMBIEN DE PHOTOS A LA FOIS FRERO
+			<select>
+				<option value="5"> 5 </option>
+				<option value="5"> 10 </option>
+				<option value="5"> 15 </option>
+				<option value="5"> 20 </option>
+				<option value="5"> 25 </option>
+				<option value="5"> 258 </option>
+			</select>
+				<br> <input type="submit" value="MONTREZ MOI LES PHOTOS DE MON PAYS">
+		</form>
+	</body>
 </html>
